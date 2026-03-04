@@ -1,0 +1,100 @@
+/* ============================= */
+/* ===== SERVICES SECTION ===== */
+/* ============================= */
+
+.services-section {
+  background: #0F1B2D;   /* Navy Background */
+  padding: 100px 0;
+}
+
+/* Section Heading */
+
+.services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: white;
+}
+
+.services-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Service Block */
+
+.service-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+/* List */
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.service-list li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #C6A75E;   /* Gold Accent */
+  font-size: 10px;
+  top: 6px;
+}
+
+/* Button */
+
+.service-btn {
+  background: #C6A75E !important;
+  color: white !important;
+  padding: 12px 28px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.service-btn:hover {
+  background: white;
+  color: #0F1B2D;
+}
+
+/* Image Placeholder */
+.service-image{
+    border-radius:20px; 
+}
+.service-image-placeholder {
+  height: 300px;
+  background: #F7F3E9;   /* Light contrast box */
+  border-radius: 8px;
+  font-size: 60px;
+  color: #0F1B2D;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 34px;
+  }
+
+  .service-heading {
+    font-size: 24px;
+  }
+}

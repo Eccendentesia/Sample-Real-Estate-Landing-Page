@@ -1,0 +1,164 @@
+/* ===== SECTION ===== */
+.about-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #F7F3E9;   /* NEW BACKGROUND */
+}
+
+/* ===== MAIN TITLES ===== */
+.about-title {
+  font-size: 64px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  color: #0F1B2D;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #C6A75E;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.about-description {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3e4a59;
+  max-width: 520px;
+}
+
+/* ===== MINI BLOCKS ===== */
+.about-mini-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0F1B2D;
+}
+
+.mini-line {
+  width: 45px;
+  height: 2px;
+  background: #C6A75E;
+  margin: 10px 0 15px;
+}
+
+.mini-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5c6773;
+}
+
+/* ===== DIAMOND GRID ===== */
+.diamond-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.diamond-grid img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  transform: rotate(45deg);
+  border-radius: 14px;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.diamond-grid img:hover {
+  transform: rotate(45deg) scale(1.08);
+}
+
+/* ===== CARDS ===== */
+.about-card {
+  background: #ffffff;   /* white card over ivory bg */
+  padding: 40px;
+  border-radius: 14px;
+  min-height: 240px;
+  position: relative;
+  transition: 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.about-card:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.about-card h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0F1B2D;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #5c6773;
+  line-height: 1.7;
+}
+
+/* ===== PLAY BUTTON ===== */
+.play-btn {
+  width: 75px;
+  height: 75px;
+  background: #C6A75E;
+  color: white;
+  font-size: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.play-btn:hover {
+  background: #b8964d;
+}
+
+/* ===== BUTTON ===== */
+.btn-outline-primary {
+  border-color: #C6A75E;
+  color: #C6A75E;
+}
+
+.btn-outline-primary:hover {
+  background: #C6A75E;
+  color: white;
+}
+
+/* ===== NEWS ARROW ===== */
+.arrow {
+  font-size: 22px;
+  color: #C6A75E;
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .about-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 576px) {
+  .diamond-grid {
+    grid-template-columns: repeat(2, 90px);
+  }
+
+  .diamond-grid img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+}

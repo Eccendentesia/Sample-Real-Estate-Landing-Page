@@ -1,0 +1,156 @@
+/* ============================= */
+/* ===== MAIN HEADER BASE ===== */
+/* ============================= */
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 22px 0;
+  background: transparent;
+  z-index: 1000;
+  transition: background 0.4s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============================= */
+/* ===== WRAPPER ===== */
+/* ============================= */
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ============================= */
+/* ===== LOGO ===== */
+/* ============================= */
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* ============================= */
+/* ===== NAV LINKS ===== */
+/* ============================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* ============================= */
+/* ===== CTA BUTTON ===== */
+/* ============================= */
+
+.header-cta {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.header-cta:hover {
+  background: white;
+  color: #0F1B2D;
+}
+
+/* ============================= */
+/* ===== HAMBURGER ===== */
+/* ============================= */
+
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* ============================= */
+/* ===== WHEN SCROLLED ===== */
+/* ============================= */
+
+.main-header.scrolled {
+  background: #F7F3E9;   /* Your chosen color */
+  padding: 16px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Change text color when scrolled */
+
+.main-header.scrolled .logo {
+  color: #0F1B2D;
+}
+
+.main-header.scrolled .nav-links a {
+  color: #0F1B2D;
+}
+
+.main-header.scrolled .menu-toggle {
+  color: #0F1B2D;
+}
+
+/* Gold CTA on scroll */
+
+.main-header.scrolled .header-cta {
+  border-color: #C6A75E;
+  color: #C6A75E;
+}
+
+.main-header.scrolled .header-cta:hover {
+  background: #C6A75E;
+  color: white;
+}
+
+/* ============================= */
+/* ===== MOBILE ===== */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+  .nav-links {
+    flex-direction: column;
+    background: #0F1B2D;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    gap: 20px;
+  }
+
+  .header-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .header-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* When scrolled, mobile dropdown background matches theme */
+  .main-header.scrolled .nav-links {
+    background: #F7F3E9;
+  }
+}

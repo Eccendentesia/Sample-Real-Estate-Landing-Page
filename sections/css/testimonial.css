@@ -1,0 +1,75 @@
+.case-section {
+  background: #F7F3E9;   /* Ivory */
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.case-title {
+  font-family: 'Playfair Display', serif;
+  color: #1F3E54;
+  font-size: 42px;
+}
+
+.case-subtitle {
+  color: #5c6773;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Card */
+
+.case-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  transition: 0.4s ease;
+  height: 100%;
+}
+
+.case-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* Image */
+
+.case-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Content */
+
+.case-content {
+  padding: 25px;
+}
+
+.case-content h5 {
+  color: #1F3E54;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.case-content p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.case-link {
+  color: #C6A75E;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.case-link:hover {
+  letter-spacing: 1px;
+}
+
+/* Carousel arrow */
+.custom-arrow {
+  filter: invert(30%);
+}

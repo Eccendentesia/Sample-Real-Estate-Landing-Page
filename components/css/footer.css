@@ -1,0 +1,150 @@
+.main-footer {
+  background: #0F1B2D;   /* Brand Navy */
+  color: rgba(255, 255, 255, 0.75);
+  padding: 80px 0 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+/* Logo Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  background: #C6A75E;   /* Gold Accent */
+  color: #0F1B2D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-logo h4 {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer-description {
+  margin: 20px 0;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+/* Headings */
+.footer-col h5 {
+  color: #C6A75E;   /* Gold headings */
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Lists */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-col ul li:hover {
+  color: #C6A75E;
+}
+
+/* Social */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons span {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icons span:hover {
+  background: #C6A75E;
+  color: #0F1B2D;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-legal span {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-legal span:hover {
+  color: #C6A75E;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

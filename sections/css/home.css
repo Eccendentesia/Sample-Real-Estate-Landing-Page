@@ -1,0 +1,102 @@
+/* ============================= */
+/* ===== HERO SECTION ===== */
+/* ============================= */
+
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 0;
+  background: #0F1B2D;   /* Deep Navy */
+  display: flex;
+  align-items: center;
+}
+
+/* ============================= */
+/* ===== HERO CONTENT ===== */
+/* ============================= */
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 1.2;
+  color: white;
+}
+
+.hero-content p {
+  max-width: 540px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-subtitle {
+  letter-spacing: 2px;
+  color: #C6A75E;   /* Gold accent */
+}
+
+.hero-trust {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================= */
+/* ===== BUTTONS ===== */
+/* ============================= */
+
+/* ============================= */
+/* ===== HERO BUTTONS FIX ===== */
+/* ============================= */
+
+.hero-btn-primary {
+  background: #C6A75E !important;
+  color: #ffffff !important;
+  border: 1px solid #C6A75E !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  background: #b8964d !important;
+  border-color: #b8964d !important;
+  color: #ffffff !important;
+}
+
+.hero-btn-outline {
+  background: transparent !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+  background: #ffffff !important;
+  color: #0F1B2D !important;
+}
+/* ============================= */
+/* ===== HERO IMAGE ===== */
+/* ============================= */
+
+.hero-image {
+  max-width: 95%;
+  border-radius: 14px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* ============================= */
+/* ===== RESPONSIVE ===== */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 34px;
+  }
+}

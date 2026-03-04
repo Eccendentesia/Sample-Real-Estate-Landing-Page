@@ -1,0 +1,74 @@
+/* SECTION BACKGROUND */
+.contact-section {
+  background: #0F1B2D;
+  color: #ffffff;
+}
+
+/* HEADING */
+.contact-title {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.contact-subtitle {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+/* GOLD ACCENT */
+.gold-text {
+  color: #C6A75E;
+}
+
+.muted-text {
+  color: #94a3b8;
+}
+
+/* CARD CONTAINER */
+.contact-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(198, 167, 94, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* INPUT FIELDS */
+.luxury-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #334155;
+  padding: 14px 0;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.luxury-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #C6A75E;
+  color: #ffffff;
+}
+
+/* BUTTON */
+.luxury-btn {
+  background: #C6A75E;
+  color: #0F1B2D;
+  padding: 14px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.luxury-btn:hover {
+  background: transparent;
+  color: #C6A75E;
+  border: 1px solid #C6A75E;
+}
+
+/* INFO TEXT */
+.contact-info p {
+  margin-bottom: 6px;
+  color: #cbd5e1;
+}
